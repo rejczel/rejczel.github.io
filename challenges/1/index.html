@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <title>Weekly WebDev Challenge #1</title>
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <img class="logo-header" src="img/logo.png">
+        <img class="logo-header" src="img/logo.png" alt="masterlab creative logo">
     </div>
-    <div class="span"></div>
     <div class="column-left">
         <h2 class="form-header">Register Form</h2>
         <div class="border">
-        <form class="form" name="form-register">
+        <form action="data.php" method="post" class="form" name="form-register">
             <input type="text" name="username" id="register-user" placeholder="Username" required>
                 <input type="password" name="password" id="register-pass" placeholder="Password" required>
                 <input type="password" name="confirm-password" id="register-confpass" placeholder="Confirm Password" required>
@@ -31,7 +31,7 @@
             <input type="text" name="name" id="send-name" placeholder="Your Name" required>
             <input type="email" name="email" id="send-mail" placeholder="Your Email" required>
             <textarea cols="30" rows="8" required placeholder="Type your message..."></textarea>
-            <input type="checkbox" id="send-checkbox" value="agree" required>
+            <input type="checkbox" id="send-checkbox" value="send-copy" required>
                 <label for="send-checkbox"><p>Send a copy to my Email</p></label>
             <button type="submit" name="send-submit">Send mail</button>
             </form>
@@ -77,9 +77,10 @@
             </form>
         </div>
         <div class="footer">
-            <img class="logo-footer" src="img/logo-footer.png">
+            <img class="logo-footer" src="img/logo-footer.png" alt="masterlab creative logo">
         </div>
     </div>
     <div class="span"></div>
 </div>
 </body>
+</html>
